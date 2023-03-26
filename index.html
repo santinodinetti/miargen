@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>DNI Digital</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <div class="pages">
+        <section id="page one">
+            <nav>
+                <button class="icon go-back"><img src="../miarg/assets/icons8-back-50.png" alt=""></button>
+                <h6 class="header-title">DNI Digital</h6>
+                <button class="icon archive"><img src="../miarg/assets/352426_history_icon.png" alt=""></button>
+            </nav>
+            
+            <div class="dni-container" >
+                <!--Echo random date within two days back-->
+                <p class='last-update'>Última actualización: <span id="last-updated"></span> h</p>
+                <div class="dni" id="dni">
+                    <div class="dni-front">
+                        <img src="front.jpg" class="swipable">
+                    </div>
+                    <div class="dni-back">
+                        <img src="back.jpg" class="swipable">
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <ul>
+                    <li onclick="openDetails()"><img src="../miarg/assets/detalle.png" alt=""><a href="#">Ver detalle de mi DNI Digital</a></li><br>
+                    <li><img src="../miarg/assets/telefono-neg.png" alt=""><a href="https://www.argentina.gob.ar/interior/renaper/canales-renaper">Mesa de ayuda</a></li>
+                </ul>
+                
+                
+            </div>  
+        </section>
+        <section id="page two">
+            <nav>
+                <button class="icon go-back" onclick="closeDetails()"><img src="../assets/icons8-back-50.png" alt=""></button>
+                <h6 class="header-title">DNI Digital - Detalle</h6>
+            </nav>
+            <div class="header">
+                <img src="profile.png" class="pic">
+                <img src="barcode.gif" class="barcode">
+            </div>
+            <div class="fieldlist">
+                <div class="fieldgroup">
+                    <label class="key">Número de DNI</label>
+                    <span class="value">12345678</span>
+                </div>
+                <div class="fieldgroup">
+                    <label class="key">Número de trámites</label>
+                    <span class="value">12345678912</span>
+                </div>
+                <div class="fieldgroup">
+                    <label class="key">Nombre</label>
+                    <span class="value">LOUIS TROY</span>
+                </div>
+                <div class="fieldgroup">
+                    <label class="key">Apellido</label>
+                    <span class="value">TOMLINSON</span>
+                </div>
+                <div class="fieldgroup">
+                    <label class="key">Ejemplar</label>
+                    <span class="value">1D</span>
+                </div>
+                <div class="fieldgroup">
+                    <label class="key">Fecha de nacimiento</label>
+                    <span class="value">24/DIC/1991</span>
+                </div>
+                <div class="fieldgroup">
+                    <label class="key">Fecha de emisión</label>
+                    <span class="value">25/ABR/2021</span>
+                </div>
+                <div class="fieldgroup">
+                    <label class="key">Fecha de vencimiento</label>
+                    <span class="value">25/ABR/2036</span>
+                </div>
+                <div class="fieldgroup">
+                    <label class="key">Domicilio</label>
+                    <span class="value">SONY ENTRETAINMENT</span>
+                </div>
+                <div class="fieldgroup">
+                    <label class="key">Lugar de nacimiento</label>
+                    <span class="value">UK</span>
+                </div>
+                <div class="fieldgroup">
+                    <label class="key">Firma</label>
+                    <span class="value signature"><img src="signature.png" alt=""></span>
+                    <span class="value mrzc"><img src="mrz.png" alt="" class="mrz"></span>
+                </div>
+                    
+            </div>
+        </section>
+    </div>
+</div>
+<script src="script.js"></script>
+<script src="swipe.js"></script>
+</body>
+</html>
